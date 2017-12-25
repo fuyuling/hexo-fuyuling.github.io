@@ -14,3 +14,9 @@ show keyguard有两个触发点，一个是systemReady,意思是系统启动完�
 ![Keyguard](Keyguard_1/keyguard_3.png)
 在处理show消息的case中，开始执行锁屏的展示动作，包含动画等操作，同样会执行SystemUI对Statubar的变化，Window type的变更。同时开始使用userActivity()来执行即时亮屏等操作。
 ### sreenOff加锁
+
+
+## SystemUI的启动
+![Keyguard](Keyguard_1/keyguard_systemUI_7.0.png)
+![Keyguard](Keyguard_1/keyguard_systemUI_8.0.png)
+在android8.0版本中,去掉了ServiceMonitor,在systemBars.start()中直接掉起createStatusBarFromConfig();去new StatusBar.java, 这里和7.0不一样的是去掉了BaseStatusBar
