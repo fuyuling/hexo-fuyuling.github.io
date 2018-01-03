@@ -142,4 +142,9 @@ ssh root@47.100.7.60  -i dev/sshkey.pem
 ![maven](spring-boot-mysql/rds_mysql.png)
 ![maven](spring-boot-mysql/white_list.png)
 
+当遇到端口被占用
+![maven](spring-boot-mysql/kill_8080.png)
 
+```
+kill pid
+```

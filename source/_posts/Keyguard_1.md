@@ -19,4 +19,6 @@ show keyguard有两个触发点，一个是systemReady,意思是系统启动完�
 ## SystemUI的启动
 ![Keyguard](Keyguard_1/keyguard_systemUI_7.0.png)
 ![Keyguard](Keyguard_1/keyguard_systemUI_8.0.png)
-在android8.0版本中,去掉了ServiceMonitor,在systemBars.start()中直接掉起createStatusBarFromConfig();去new StatusBar.java, 这里和7.0不一样的是去掉了BaseStatusBar
+在android8.0版本中,去掉了ServiceMonitor,在systemBars.start()中直接掉起createStatusBarFromConfig();去new StatusBar.java, 这里和7.0不一样的是去掉了BaseStatusBar.
+## POWER键灭屏时Keyguard的加载
+![Keyguard](Keyguard_1/keyguard_power.png)
